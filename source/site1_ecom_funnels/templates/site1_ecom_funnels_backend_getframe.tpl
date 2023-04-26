@@ -1,0 +1,1 @@
+{if !empty($frames_content)}{$frames_content}{/if}

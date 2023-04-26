@@ -1,0 +1,232 @@
+@charset "utf-8";
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	}
+	
+fieldset { border: 1px solid #000; }
+
+legend {
+	padding: 0;
+	color: #000;
+	}
+
+input, textarea, select {
+	margin: 0;
+	padding: 1px;
+	font-size: 100%;
+	font-family: inherit;
+	}
+	
+select { padding: 0; }
+
+form.wh fieldset { margin-bottom: 10px; }
+
+form.wh legend {
+	padding: 0 2px;
+	font-weight: bold;
+	_margin: 0 -7px; /* IE Win */
+}
+
+form.wh label {
+	display: inline-block;
+	line-height: 1.8;
+	vertical-align: top;
+}
+
+form.wh fieldset ol {
+	margin: 0;
+	padding: 0;
+}
+
+form.wh fieldset li {
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+}
+
+form.wh fieldset li p.helper {
+	font-style:italic;
+	color:#888;
+}
+form.wh fieldset fieldset {
+	border: none;
+	margin: 3px 0 0;
+}
+
+form.wh fieldset fieldset legend {
+	padding: 0 0 5px;
+	font-weight: normal;
+}
+
+form.wh fieldset fieldset label {
+	display: block;
+	width: auto;
+}
+
+form.wh em {
+	font-weight: bold;
+	font-style: normal;
+	color: #f00;
+}
+
+form.wh label { width: 180px; } /* Width of labels */
+form.wh fieldset fieldset label { margin-left: 180px; } /* Width plus 3 (html space) */
+
+form.wh {
+	margin:0 auto;
+	font: normal 90% Verdana,Arial,Helvetica,sans-serif;
+	color: #333;
+}
+
+form.wh legend { padding-left: 0; }
+	
+form.wh legend,
+form.wh label { color: #333; }
+
+form.wh fieldset {
+	border: none;
+	border-top: 1px solid #C9DCA6;
+}
+
+form.wh fieldset fieldset { background: none; }
+
+form.wh fieldset.replace-border{padding:10px; border:1px solid #C9DCA6;}
+
+form.wh fieldset li {
+	padding: 5px 10px 7px;
+}
+
+form.wh textarea, input[type='text'], input[type='password'], select {
+	width: 300px;
+}
+
+form.wh .error{ border: 1px solid red;}
+
+.clear{clear: both;}
+
+/* Registration form */
+
+.reg-block-main {
+    padding: 20px 0 20px 0 ;
+}
+.reg-form-block{
+    border: 1px solid #c9d1d4;
+    border-radius: 4px;
+    background: #FFFFFF;
+    width: 645px;
+    text-align: left;
+
+}
+.reg-form-block .in{
+    border: 4px solid #e8f0f2;
+    border-radius: 4px;
+    padding: 21px 15px 0 20px ;
+}
+.reg-form-block h1{
+    font-size: 23px;
+    color: #697e83 !important;
+    font-weight: 100;
+    padding: 0 0 0 35px ;
+    background: url(/skin/i/frontends/design/registration/account-icon.gif) left top no-repeat;
+    font-family: "Times New Roman";
+}
+
+.reg-form-block .reg-steps{
+    background: url(/skin/i/frontends/design/registration/steps.gif) left top no-repeat;
+    height: 59px;
+    margin: 26px 0 35px 0;
+}
+.reg-form-block .reg-border-item {width: 302px; display: inline-block; border: 3px solid #edf5f8; border-radius: 6px;}
+.reg-form-block .reg-border-item input[type='text'],
+.reg-form-block .reg-border-item input[type='password'],
+.reg-form-block .reg-border-item select {
+    border:1px solid #bfd6de;
+    border-radius: 4px;
+    padding:  10px 5px 8px 5px;
+    color:#6a7e85;
+    font-size: 12px;
+    width: 290px;
+}
+.reg-form-block .reg-border-item input[type='checkbox'] {
+    border:1px solid #bfd6de;
+}
+.reg-form-block .reg-border-captcha {
+    width: 122px; display: inline-block; border: 3px solid #edf5f8; border-radius: 6px;
+}
+.reg-form-block  img{
+    border:1px solid #bfd6de;
+    border-radius: 4px;
+}
+.reg-form-block .reg-border-item select {
+    width: 302px;
+}
+.reg-form-block label {
+    color: #6a7e85 !important;
+    font-size: 12px;
+    padding-top: 10px !important;
+    text-align: right;
+}
+.reg-form-block legend {
+    color: #6a7e85 !important;
+    font-size: 11px;
+    font-weight: 100 !important;
+}
+.reg-form-block .submit {
+    background: url(/skin/i/frontends/design/registration/buttun.jpg) left top no-repeat;
+    border: none;
+    width: 129px;
+    padding: 12px 0 12px 0;
+    color: #6192a3;
+    font-size: 12px;
+    cursor: pointer;
+}
+.reg-form-block .reg-submit-block {
+    border-top:1px solid #bfd6de;
+    padding: 20px 0 0 0;
+    margin: 15px 0 0 0;
+}
+.reg-form-block .validation-advice {
+    position: absolute;
+    top:-24px;
+    width: 100%;
+}
+.reg-form-block .validate .wh-validator-theme .validator-close{
+    top:3px !important;
+    right: 9px !important;
+}
+.reg-form-block .validate .wh-validator-theme{
+    padding: 2px 10px 2px 10px;
+    background: #dd261e;
+    width: 92%;
+    opacity: 1 !important;
+    border-radius: 4px !important;
+}
+
+.reg-form-block  fieldset li {
+    padding: 5px 10px 20px !important;
+}
+.reg-form-block  .error {
+    border: 1px solid red !important;
+}
+.reg-form-block  .message {
+    border: 1px solid red !important;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+}
+.reg-form-block  .message-blue {
+    border: 1px solid #BFD6DE !important;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    color: #6A7E85;
+    font-size: 12px;
+}
+.reg-form-block  a {
+    color: #6A7E85;
+    font-size: 12px;
+}
+.reg-form-block  a:hover {
+    text-decoration: none;
+}

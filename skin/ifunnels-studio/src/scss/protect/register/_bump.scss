@@ -1,0 +1,53 @@
+.bump-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &__item {
+        display: flex;
+        border: 2px dashed #f00;
+        margin-bottom: 10px;
+        flex-direction: column;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__title {
+            width: 100%;
+            background-color: rgba($color: #ff0, $alpha: 0.3);
+            display: flex; 
+            align-items: center;
+            padding: 10px 15px;
+
+            &__checkbox {
+                width: 20px;
+                margin-right: 10px;
+
+                input {
+                    margin: 0;
+                }
+            }
+
+            &__text {
+                font-weight: 600;
+
+                span:nth-child(1) {
+                    color: #f00;
+                }
+
+                span:nth-child(2) {
+                    color: #44c97d;
+                }
+            }
+
+            label {
+                margin: 0;
+            }
+        }
+
+        &__description {
+            padding: 10px 15px;
+        }
+    }
+}

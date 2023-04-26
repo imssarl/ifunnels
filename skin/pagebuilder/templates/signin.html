@@ -1,0 +1,159 @@
+<div class="protected">
+	<div class="sign-in">
+		<div class="form-body">
+			<div class="img-holder">
+				<div class="bg"></div>
+				<div class="info-holder">
+					<img src="bundles/graphic2.svg" alt="" />
+				</div>
+			</div>
+
+			<div class="form-holder">
+				<div class="form-content">
+					<h3>Access to this content is restricted to members only.</h3>
+					<p>Please login below to access the content.</p>
+
+					<form>
+						<div class="alerts"></div>
+
+						<input class="form-control" type="text" name="login" placeholder="E-mail Address">
+						<input class="form-control" type="password" name="password" placeholder="Password">
+
+						<div class="form-button">
+							<small><a data-forgot target="_blank">Forgot password?</a></small>
+							<button type="submit">Login</button>
+						</div>
+					</form>
+
+					<div class="other-links">
+						<span>Not yet a member? Click <a href="#" id="register">HERE</a> to become a member and access
+							this content</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="register" style="display: none;">
+		<div class="form-body">
+			<div class="img-holder">
+				<div class="bg"></div>
+				<div class="info-holder">
+					<img class="md-size" src="bundles/graphic7.svg" alt="">
+				</div>
+			</div>
+
+			<div class="form-holder">
+				<div class="form-content">
+					<div class="form-items">
+						<h3 class="form-title">Registration</h3>
+
+						<div class="steps">
+							<div class="step active" data-step="acount">
+								<i class="user icon"></i>
+								<div class="content">
+									<div class="title">Acount Details</div>
+									<div class="description">Enter your information</div>
+								</div>
+							</div>
+
+							<div class="step" data-step="payment">
+								<i class="payment icon"></i>
+								<div class="content">
+									<div class="title">Payment</div>
+									<div class="description">Enter card information</div>
+								</div>
+							</div>
+
+							<div class="step" data-step="complete">
+								<i class="info icon"></i>
+								<div class="content">
+									<div class="title">Complete Order</div>
+									<div class="description">Check order details</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="steps-content">
+							<div class="step-content" data-step-content="acount">
+								<form>
+									<div class="alerts"></div>
+
+									<div class="form-subtitle">Account information</div>
+
+									<div class="login-block" hidden>
+										<input type="password" placeholder="Enter Password" name="password"
+											readonly="readonly" onfocus="this.removeAttribute('readonly');" />
+										<div class="form-button">
+											<button id="login" type="submit">Login</button>
+											<p><small>Forgot your password? Click <a data-forgot target="_blank">here</a> to restore it.</small></p>
+										</div>
+									</div>
+
+									<div class="register-block">
+										<input type="text" placeholder="Enter Email" name="email" readonly="readonly"
+											onfocus="this.removeAttribute('readonly');" />
+
+										<div data-require-shipping="false">
+											<div class="form-subtitle">Shipping Address</div>
+
+											<p>Shipping available only in the following countries</p>
+											<select name="country" class="selectpicker" data-live-search="true" title="Select country"></select>
+
+											<input type="text" placeholder="Name" name="name" autocomplete="off" />
+											<input type="text" placeholder="Address line" name="address_line_1"
+												autocomplete="off" />
+											<input type="text" placeholder="City" name="city" autocomplete="off" />
+											<input type="text" placeholder="ZIP" name="zip" autocomplete="off" />
+										</div>
+
+										<div class="form-button">
+											<button id="submit" type="submit">Next</button>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<div class="step-content" data-step-content="payment">
+								<div class="form-subtitle">Payment Information</div>
+
+								<div class="discount-box"></div>
+
+								<form id="payment-form">
+									<div class="form-subtitle">Card Details</div>
+
+									<div class="alerts"></div>
+
+									<div id="card-element"></div>
+									<div id="card-errors" role="alert"></div>
+
+									<div class="form-button btn-pay">
+										<button id="pay">Pay</button>
+									</div>
+								</form>
+							</div>
+
+							<div class="step-content" data-step-content="complete">
+								<div class="alerts"></div>
+
+								<div data-payment="true" hidden>
+									<p class="form-subtitle">Thank you! Your payment was processed successfully.</p>
+									<p>You will receive an email with your purchase details and access information.
+										<br>Your Membership Home Page can be accessed here: <br> <a href=""
+											data-field="home_page_url"></a></p>
+								</div>
+
+								<div data-payment="false" hidden>
+									<p class="form-subtitle">Thank you for joining!</p>
+									<p>You will receive an email with your access information.
+										<br>Your Membership Home Page can be accessed here: <br> <a href=""
+											data-field="home_page_url"></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

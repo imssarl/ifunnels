@@ -1,0 +1,3 @@
+{if count($arrList)>1}
+	{if $arrFilter.order!="{$field}--up"}<a href="{url name=$arrPrm.name action=$arrPrm.action}?order={$field}--up{if !empty($sortParam)}&{$sortParam}{/if}"><img src="/skin/i/backend/up.gif" width="5" height="11" alt="" /></a>{else}<img src="/skin/i/backend/up_off.gif" width="5" height="11" alt="" />{/if}{if $arrFilter.order!="{$field}--dn"}<a href="{url name=$arrPrm.name action=$arrPrm.action}?order={$field}--dn{if !empty($sortParam)}&{$sortParam}{/if}" ><img src="/skin/i/backend/down.gif" width="5" height="11" alt="" /></a>{else}<img src="/skin/i/backend/down_off.gif" width="5" height="11" alt="" />{/if}
+{/if}

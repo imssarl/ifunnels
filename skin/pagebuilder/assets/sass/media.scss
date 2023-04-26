@@ -1,0 +1,268 @@
+﻿/**
+* Font size for tablet
+*/
+
+$font-size-tablet-text: 16px!important;
+$h1-tablet : 38px!important;
+$h2-tablet : 36px!important;
+$h3-tablet : 32px!important;
+$h4-tablet : 28px!important;
+$h5-tablet : 24px!important;
+$h6-tablet : 20px!important;
+
+/**
+* Font size for mobile
+*/
+$font-size-mobile-text: 12px!important;
+$h1-mobile : 34px!important;
+$h2-mobile : 32px!important;
+$h3-mobile : 28px!important;
+$h4-mobile : 24px!important;
+$h5-mobile : 20px!important;
+$h6-mobile : 16px!important;
+
+
+/* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	//CSS
+	h1 { 
+		font-size: $h1-tablet;
+		* {
+			font-size: $h1-tablet;
+		} 
+	}
+
+	h2 { 
+		font-size: $h2-tablet; 
+		* {
+			font-size: $h2-tablet;
+		} 
+	}
+
+	h3 { 
+		font-size: $h3-tablet; 
+		* {
+			font-size: $h3-tablet;
+		} 
+	}
+
+	h4 { 
+		font-size: $h4-tablet; 
+		* {
+			font-size: $h4-tablet;
+		} 
+	}
+
+	h5 { 
+		font-size: $h5-tablet; 
+		* {
+			font-size: $h5-tablet;
+		} 
+	}
+
+	h6 { 
+		font-size: $h6-tablet; 
+		* {
+			font-size: $h6-tablet;
+		} 
+	}
+
+	p, li, span, strong, div, i, a, u {
+		font-size: $font-size-tablet-text;
+		* {
+			font-size: $font-size-tablet-text;
+		} 
+	}
+
+	button, input {
+		font-size: $font-size-tablet-text;
+	}
+}
+
+/* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	//CSS
+	h1 { 
+		font-size: $h1-tablet;
+		* {
+			font-size: $h1-tablet;
+		} 
+	}
+
+	h2 { 
+		font-size: $h2-tablet; 
+		* {
+			font-size: $h2-tablet;
+		} 
+	}
+
+	h3 { 
+		font-size: $h3-tablet; 
+		* {
+			font-size: $h3-tablet;
+		} 
+	}
+
+	h4 { 
+		font-size: $h4-tablet; 
+		* {
+			font-size: $h4-tablet;
+		} 
+	}
+
+	h5 { 
+		font-size: $h5-tablet; 
+		* {
+			font-size: $h5-tablet;
+		} 
+	}
+
+	h6 { 
+		font-size: $h6-tablet; 
+		* {
+			font-size: $h6-tablet;
+		} 
+	}
+
+	p, li, span, strong, div, i, a, u {
+		font-size: $font-size-tablet-text;
+		* {
+			font-size: $font-size-tablet-text;
+		} 
+	}
+
+	button, input {
+		font-size: $font-size-tablet-text;
+	}
+}
+
+/* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	//CSS
+	h1 { 
+		font-size: $h1-mobile; 
+		* {
+			font-size: $h1-mobile;
+		} 
+	}
+
+	h2 { 
+		font-size: $h2-mobile; 
+		* {
+			font-size: $h2-mobile;
+		} 
+	}
+
+	h3 { 
+		font-size: $h3-mobile; 
+		* {
+			font-size: $h3-mobile;
+		} 
+	}
+
+	h4 { 
+		font-size: $h4-mobile; 
+		* {
+			font-size: $h4-mobile;
+		} 
+	}
+
+	h5 { 
+		font-size: $h5-mobile; 
+		* {
+			font-size: $h5-mobile;
+		} 
+	}
+
+	h6 { 
+		font-size: $h6-mobile; 
+		* {
+			font-size: $h6-mobile;
+		} 
+	}
+
+	p, li, span, strong, div, i, a, u {
+		font-size: $font-size-mobile-text;
+		* {
+			font-size: $font-size-mobile-text;
+		} 
+	}
+
+	button, input {
+		font-size: $font-size-mobile-text;
+	}
+}
+
+/* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+	//CSS
+	//CSS
+	h1 { 
+		font-size: $h1-mobile; 
+		* {
+			font-size: $h1-mobile;
+		} 
+	}
+
+	h2 { 
+		font-size: $h2-mobile; 
+		* {
+			font-size: $h2-mobile;
+		} 
+	}
+
+	h3 { 
+		font-size: $h3-mobile; 
+		* {
+			font-size: $h3-mobile;
+		} 
+	}
+
+	h4 { 
+		font-size: $h4-mobile; 
+		* {
+			font-size: $h4-mobile;
+		} 
+	}
+
+	h5 { 
+		font-size: $h5-mobile; 
+		* {
+			font-size: $h5-mobile;
+		} 
+	}
+
+	h6 { 
+		font-size: $h6-mobile; 
+		* {
+			font-size: $h6-mobile;
+		} 
+	}
+
+	p, li, span, strong, div, i, a, u {
+		font-size: $font-size-mobile-text;
+		* {
+			font-size: $font-size-mobile-text;
+		} 
+	}
+
+	button, input {
+		font-size: $font-size-mobile-text;
+	}
+}

@@ -1,0 +1,35 @@
+.test-ab-panel {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 5px 5px;
+    background: #e54d42;
+    display: flex;
+    align-items: center;
+    z-index: 10000;
+
+    .test-ab-header {
+        font-weight: 600;
+        padding-left: 10px;
+        color: #fff;
+    }
+
+    .test-ab-body {
+        display: flex;
+        margin-left: 15px;
+
+        a {
+            padding: 5px 10px;
+            color: #fff;
+
+            &:hover, &:active, &:focus {
+                text-decoration: none;
+            }
+
+            &.active {
+                background-color: #0652f8;
+            }
+        }
+    }
+}

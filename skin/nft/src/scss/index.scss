@@ -1,0 +1,22 @@
+[data-component="nft"] {
+    h2 {
+        margin: 0 0 1rem;
+    }
+
+    .nft-mint {
+        text-align: center;
+
+        .btn-info {
+            font-size: 1.5rem;
+        }
+    
+        .mint_amount {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 21px;
+            font-weight: bold;
+            line-height: 40px;
+            vertical-align: bottom;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import "signin/signin";
+@import "signin/alerts";
+
+@import "register/register";
+@import "register/steps";
+@import "register/steps-content";
+@import "register/card";
+@import "register/order-summary";
+
+.swal2-popup {
+    font-size: 14px!important;
+}

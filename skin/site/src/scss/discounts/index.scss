@@ -1,0 +1,17 @@
+@import url('/skin/light/plugins/switchery/dist/switchery.min.css');
+
+.non-caret {
+    .btn:active {
+        box-shadow: none !important;
+    }
+
+    .caret {
+        display: none;
+    }
+
+    .filter-option {
+        text-align: center !important;  
+        font-weight: 600;      
+    }
+}
+

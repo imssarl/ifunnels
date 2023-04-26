@@ -1,0 +1,101 @@
+{if $arrDirs}
+<div>path: {$strCurrentDir}</div>
+<div id="show_div"><a href="#" id="show">create folder here</a></div>
+<div style="display:none;" id="create_div">
+	<form method="post" action="" id="create_form">
+		<input type="text" id="new_folder" name="new_folder" value="{$strFolder}" class="required" />&nbsp;
+		<a href="#" onclick="$('create_form').fireEvent('submit');">create</a>
+	</form>
+</div>
+<table style="width:100%;">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Name</th>
+			<th>Files Inside</th>
+			<th>User/Group</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	<tbody>
+		{foreach from=$arrDirs key='k' item='v'}
+		<tr {if $k%2=='0' } class="matros" {/if}> {if $v.name=='.' } <td><img src="/skin/i/frontends/design/buttons/folder.png"
+			 {if $smarty.get.mode!='with_files' } title="Click here to select" id="{$strCurrentDir}" class="select" {/if} /></td>
+			<td>{$v.name}</td>
+			<td>current folder</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			{elseif $v.name=='..'}
+			<td>{if $strCurrentDir!='/'}<a href="{url name='site1_hosting' action='browse' wg=$strPrevDir}" title="Click here to go back">{/if}<img
+					 src="/skin/i/frontends/design/buttons/folder.png" title="Click here to go back" /></a></td>
+			<td>{if $strCurrentDir!='/'}<a href="{url name='site1_hosting' action='browse' wg=$strPrevDir}" title="Click here to go back">{/if}{$v.name}</a></td>
+			<td>parent folder</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			{elseif $v.is_dir}
+			<td><img src="/skin/i/frontends/design/buttons/folder.png" {if $smarty.get.mode!='with_files' } title="Click here to select"
+				 id="{$strCurrentDir}{$v.name}/" class="select" {/if} /></td>
+			<td><a href="{url name='site1_hosting' action='browse' wg=$strGetCurrentDir}{$v.name}" title="Click here to view subfolder(s)">{$v.name}</a></td>
+			<td>{$v.files_inside}</td>
+			<td>{$v.user}/{$v.group}</td>
+			<td>{$v.stamp|date_format:$config->date_time->dt_full_format}</td>
+			{elseif $v.type=='-'}
+			<td><img src="/skin/i/frontends/design/buttons/file.png" title="Select {$v.name} file" id="{$strCurrentDir}{$v.name}"
+				 class="select" /></td>
+			<td><a href="#" title="Select {$v.name} file" id="{$strCurrentDir}{$v.name}" class="select">{$v.name|ellipsis:"15"}</a></td>
+			<td>{$v.files_inside}</td>
+			<td>{$v.user}/{$v.group}</td>
+			<td>{$v.stamp|date_format:$config->date_time->dt_full_format}</td>
+			{else}
+			<td><img src="/skin/i/frontends/design/buttons/link.png" title="{$v.name} is not Regular file" /></td>
+			<td><a href="#" onclick="r.alert( 'Information', '{$v.name} is not Regular file', 'roar_information' ); return false;"
+				 title="{$v.name} is not Regular file">{$v.name|ellipsis:"15"}</a></td>
+			<td>{$v.files_inside}</td>
+			<td>{$v.user}/{$v.group}</td>
+			<td>{$v.stamp|date_format:$config->date_time->dt_full_format}</td>
+			{/if}
+		</tr>
+		{/foreach}
+	</tbody>
+</table>
+<script type="text/javascript">
+	{literal}
+	window.addEvent('domready', function () {
+		$$('.select').each(function (el) {
+			el.addEvent('click', function (e) {
+				e.stop();
+				window.parent.placePath(this.id);
+				window.parent.multibox.boxWindow.close()
+			})
+		});
+		$('show').addEvent('click', function (e) {
+			e.stop();
+			$('show_div').hide();
+			$('create_div').show('block');
+			$('new_folder').focus()
+		});
+		var isEmpty = new InputValidator('required', {
+			errorMsg: 'This field is required.',
+			test: function (field) {
+				return ((field.get('value') == null) || (field.get('value').length == 0))
+			}
+		});
+		var send = false;
+		$('create_form').addEvent('submit', function (e) {
+			e && e.stop();
+			if (send) {
+				return
+			}
+			if (isEmpty.test($("new_folder"))) {
+				r.alert('Client side error', 'Fill folder name field', 'roar_error');
+				return
+			}
+			send = true;
+			this.submit()
+		})
+	});
+	{/literal}
+</script>
+{else}
+<div>{include file='../../error.tpl'}</div>
+{/if}

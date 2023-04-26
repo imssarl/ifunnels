@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Parallax 17</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+<style>
+    @import url(https://fonts.googleapis.com/css?display=swap&family=Faster+One|Gruppo|Montserrat+Subrayada:400,700|Open+Sans:100,300,400,700,800|Poiret+One|Raleway:100,200,300,400,700,900);@font-face{font-family:SourceSansPro;font-display:swap;src:url(../bundles/12017a29c44bab28ac0e71a5920bdf87.eot);font-weight:400;font-style:normal}@font-face{font-family:SourceSansProSemiBold;font-display:swap;font-display:swap;src:url(../bundles/6303df95375f11f94369275f7ee644d9.eot);font-weight:400;font-style:normal}body .parrot{font-family:SourceSansPro,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#000}.parrot a{color:#02baf2;text-decoration:none}.parrot .btn{font-family:SourceSansProSemiBold,Helvetica,Arial,sans-serif;border:1px solid transparent;font-size:16px;line-height:1.6;border-radius:4px;padding:7px 15px;text-transform:uppercase;-webkit-font-smoothing:subpixel-antialiased}.parrot .btn-success{color:#fff;background-color:#3eb5ac}.parrot .btn:after{content:"";position:absolute;z-index:-1}.parrot h1,.parrot h5{font-family:SourceSansProSemiBold,Helvetica,Arial,sans-serif;font-weight:700;line-height:1.1;color:#364347}.parrot h1{margin-top:24px;margin-bottom:12px}.parrot h5{margin-top:12px;margin-bottom:12px}.parrot h1{font-size:36px}.parrot h5{font-size:16px}.parrot p{color:#364347}.parrot{background-repeat:no-repeat;background-size:cover;background-attachment:scroll;background-position:0 top}.parrot h1,.parrot h5{margin-top:0;margin-bottom:15px}.parrot .margin-bottom-40{margin-bottom:40px}.parrot .margin-bottom-30{margin-bottom:30px}.parrot .margin-bottom-0{margin-bottom:0}.parrot .text-white{color:#fff}.parrot .text-noble-grey{color:#999}.parrot .text-uppercase{text-transform:uppercase}.parrot .font-light{font-weight:300}.parrot .feature-icon{min-height:40px;float:left;min-width:60px}.parrot .feature-box4{padding:30px 20px 30px 0}.parrot .feature-box4 .fa{font-size:32px;color:#28948c}.parrot .content-flex{display:flex}.parrot .feature4-content h5{margin-top:0}.parrot .feature-content6{text-align:right;padding-right:40px}@media (max-width:768px){.parrot .feature-content6{text-align:center;padding-right:0;margin-bottom:30px}}.parrot .feature-content6 h1{line-height:1.45}.parrot .btn-parrot1{font-weight:300;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}.parrot .btn-parrot1{border-radius:0}[data-container]{min-height:25px}[data-component]:after{clear:both}[data-component]:after,[data-component]:before{display:table;content:""}[data-component]{position:relative;z-index:auto}.row>div{min-height:25px}.bg-layer{background-size:cover;position:relative}.overly{position:absolute;top:0;bottom:0;left:0;right:0;z-index:0;width:100%;height:100%}.padding-top-bottom-80{padding-top:80px;padding-bottom:80px}.margin-bottom-40{margin-bottom:40px!important}.margin-bottom-30{margin-bottom:30px!important}.margin-bottom-0{margin-bottom:0!important}.parallax-window{background:0 0}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0}a{background:0 0}h1{margin:.67em 0;font-size:2em}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:62.5%}body{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}a{color:#428bca;text-decoration:none}h1,h5{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1{margin-top:20px;margin-bottom:10px}h5{margin-top:10px;margin-bottom:10px}h1{font-size:36px}h5{font-size:14px}p{margin:0 0 10px}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-right:-15px;margin-left:-15px}.col-md-5,.col-md-6,.col-md-7{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:992px){.col-md-5,.col-md-6,.col-md-7{float:left}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}}.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;background-image:none;border:1px solid transparent;border-radius:4px}.btn-success{color:#fff;background-color:#5cb85c;border-color:#4cae4c}.container:after,.container:before,.row:after,.row:before{display:table;content:" "}.container:after,.row:after{clear:both}@-ms-viewport{width:device-width}@font-face{font-family:FontAwesome;font-display:swap;src:url(../bundles/674f50d287a8c48dc19ba404d20fe713.eot);src:url(../bundles/674f50d287a8c48dc19ba404d20fe713.eot?#iefix&v=4.7.0) format("embedded-opentype"),url(../bundles/af7ae505a9eed503f8b8e6982036873e.woff2) format("woff2"),url(../bundles/fee66e712a8a08eef5805a46892932ad.woff) format("woff"),url(../bundles/b06871f281fee6b241d60582ae9369b9.ttf) format("truetype"),url(../bundles/912ec66d7572ff821749319396470bde.svg#fontawesomeregular) format("svg");font-weight:400;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-bar-chart:before{content:"\F080"}.fa-desktop:before{content:"\F108"}.fa-sliders:before{content:"\F1DE"}.fa-diamond:before{content:"\F219"}.animated{animation-duration:1s;animation-fill-mode:both}@keyframes fadeInLeft{0%{opacity:0;transform:translate3d(-100%,0,0)}to{opacity:1;transform:none}}.fadeInLeft{animation-name:fadeInLeft}@keyframes fadeInRight{0%{opacity:0;transform:translate3d(100%,0,0)}to{opacity:1;transform:none}}.fadeInRight{animation-name:fadeInRight}
+</style>
+<link href="../bundles/Enterprise_parallax.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="../bundles/Enterprise_parallax.css" rel="stylesheet"></noscript>
+<script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script></head>
+<body>
+
+    <div id="page" class="page">
+        <div class="block parrot content bg-layer padding-top-bottom-80 parallax-window" id="parallax17" data-parallax="scroll" data-image-src="../bundles/77fdd95e5e7b132627b6fa69a6ff81ec.jpg">
+            <div class="overly" style="background:rgba(0, 0, 0, 0.9)"></div>
+            <div class="container">
+                <div class="row" data-component="grid">
+                    <div class="col-md-5">
+                        <div class="feature-content6 animated fadeInLeft" data-container="true">
+                            <div data-content="true" data-component="heading">
+                                <h1 class="text-white margin-bottom-30 text-uppercase">
+                                    Create Awesome <br> Websites With Ease!
+                                </h1> 
+                            </div>
+                            <div data-content="true" data-component="text">
+                                <p class="text-noble-grey font-light margin-bottom-40">
+                                    Efficiently develop cutting-edge. Intrinsicly disintermediate viral testing procedures with ideas. Energistically administrate intermandated materials.
+                                </p>
+                            </div>
+                            <div data-component="button">
+                                <a href="#" class="btn btn-success btn-parrot1">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-md-7">
+                        <div class="row" data-component="grid">
+                            <div class="col-md-6">
+                                <div class="sbpro-bg-styler feature-box4 content-flex animated fadeInRight" data-container="true">
+                                    <div class="feature-icon" data-container="true">
+                                        <div data-component="icon">
+                                            <span class="fa fa-desktop"></span>
+                                        </div>
+                                    </div>
+                                    <div class="feature4-content" data-container="true">
+                                        <div data-content="true" data-component="heading">
+                                            <h5 class="text-white text-uppercase">
+                                                Web Development
+                                            </h5> 
+                                        </div>
+                                        <div data-content="true" data-component="text">
+                                            <p class="text-noble-grey font-light margin-bottom-0">
+                                                Competently mesh market positioning premium process improvements for trailers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                        
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="sbpro-bg-styler feature-box4 content-flex animated fadeInRight" data-container="true">
+                                    <div class="feature-icon" data-container="true">
+                                        <div data-component="icon">
+                                            <span class="fa fa-bar-chart"></span>
+                                        </div>
+                                    </div>
+                                    <div class="feature4-content" data-container="true">
+                                        <div data-content="true" data-component="heading">
+                                            <h5 class="text-white text-uppercase">
+                                                BUSINESS CONSULTING
+                                            </h5> 
+                                        </div>
+                                        <div data-content="true" data-component="text">
+                                            <p class="text-noble-grey font-light margin-bottom-0">
+                                                Competently mesh market positioning premium process improvements for trailers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="sbpro-bg-styler feature-box4 content-flex animated fadeInRight" data-container="true">
+                                    <div class="feature-icon" data-container="true">
+                                        <div data-component="icon">
+                                            <span class="fa fa-sliders"></span>
+                                        </div>
+                                    </div>
+                                    <div class="feature4-content" data-container="true">
+                                        <div data-content="true" data-component="heading">
+                                            <h5 class="text-white text-uppercase">
+                                                MARKETING
+                                            </h5> 
+                                        </div>
+                                        <div data-content="true" data-component="text">
+                                            <p class="text-noble-grey font-light margin-bottom-0">
+                                                Competently mesh market positioning premium process improvements for trailers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="sbpro-bg-styler feature-box4 content-flex animated fadeInRight" data-container="true">
+                                    <div class="feature-icon" data-container="true">
+                                        <div data-component="icon">
+                                            <span class="fa fa-diamond"></span>
+                                        </div>
+                                    </div>
+                                    <div class="feature4-content" data-container="true">
+                                        <div data-content="true" data-component="heading">
+                                            <h5 class="text-white text-uppercase">
+                                                BRAND / IDENTITY 
+                                            </h5> 
+                                        </div>
+                                        <div data-content="true" data-component="text">
+                                            <p class="text-noble-grey font-light margin-bottom-0">
+                                                Competently mesh market positioning premium process improvements for trailers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="../bundles/Enterprise_parallax.bundle.js"></script></body>
+</html>

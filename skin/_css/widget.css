@@ -1,0 +1,150 @@
+body{
+	padding:0;
+	margin:0;
+	font-size:11px;
+	font-family:Arial;
+}
+
+#splash div{padding:198px 0px 0px 112px;}
+.w-tabs{
+	padding:0;
+	margin:0 0 20px 0;
+	float:left;
+	width:100%;
+	background:#AAA;
+}
+.w-tabs li{
+	list-style:none;
+	float:left;
+	margin:0;
+}
+.w-tabs li a{
+	text-decoration:none;
+	color:#000;
+	font-family:Arial;
+	font-size:10px;
+	padding:5px 5px;
+	display:block;
+	float:left;
+}
+.w-tabs li a.active{
+	color:#FFF;
+	background:#999;
+}
+.fields{
+	clear:both;
+	padding:0 5px 0 5px;
+}
+form.wh fieldset fieldset label {
+	margin-left: 0;
+}
+#splash{
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:#000;
+	opacity:0.5;
+	display:none;
+}
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	}
+
+fieldset { border: 1px solid #000; }
+
+legend {
+	padding: 0;
+	color: #000;
+	}
+
+input, textarea, select {
+	margin: 0;
+	padding: 1px;
+	font-size: 100%;
+	font-family: inherit;
+	}
+
+select { padding: 0; }
+
+form.wh fieldset { margin-bottom: 10px; }
+
+form.wh legend {
+	padding: 0 2px;
+	font-weight: bold;
+	_margin: 0 -7px; /* IE Win */
+}
+
+form.wh label {
+	display: inline-block;
+	line-height: 1.8;
+	vertical-align: top;
+}
+
+form.wh fieldset ol {
+	margin: 0;
+	padding: 0;
+}
+
+form.wh fieldset li {
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+}
+
+form.wh fieldset li p.helper {
+	font-style:italic;
+	color:#888;
+}
+form.wh fieldset fieldset {
+	border: none;
+	margin: 3px 0 0;
+}
+
+form.wh fieldset fieldset legend {
+	padding: 0 0 5px;
+	font-weight: normal;
+}
+
+form.wh fieldset fieldset label {
+	display: block;
+	width: auto;
+}
+
+form.wh em {
+	font-weight: bold;
+	font-style: normal;
+	color: #f00;
+}
+
+form.wh label { width: 240px; } /* Width of labels */
+form.wh fieldset fieldset label { margin-left: 10px; } /* Width plus 3 (html space) */
+
+form.wh {
+	margin:0 auto;
+	font: normal 90% Verdana,Arial,Helvetica,sans-serif;
+	color: #333;
+}
+
+form.wh legend { padding-left: 0; }
+
+form.wh legend,
+form.wh label { color: #333; }
+
+form.wh fieldset {
+	border: none;
+	border-top: 1px solid #C9DCA6;
+}
+
+form.wh fieldset fieldset { background: none; }
+
+form.wh fieldset.replace-border{padding:10px; border:1px solid #C9DCA6;}
+
+form.wh fieldset li {
+	padding: 2px 10px 3px;
+}
+
+form.wh textarea, input[type='text'], input[type='password'], select {
+	width: 250px;
+}
+.toggler{cursor:pointer;}
