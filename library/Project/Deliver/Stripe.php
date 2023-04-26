@@ -8,23 +8,23 @@ require_once Zend_Registry::get('config')->path->absolute->library . 'vendor' . 
 class Project_Deliver_Stripe
 {
 
-    const WEBHOOK_ID = 'whsec_smPvl3gV206Jin3Xgj6ml0Q6I0RIFTpy';
+    const WEBHOOK_ID = 'whsec_s';
 
-    private static $account_id = 'acct_1040Vj4lTQbl4K0W';
+    private static $account_id = 'acct_';
 
     private static $client_id = array(
-        'test' => 'ca_GnIy7t2uyVGCKZ3NgqM6AMj9qxZ1TX5M',
-        'live' => 'ca_GnIyC2ChhfbwqRhAuVG7bV5EGEWBucbx',
+        'test' => '',
+        'live' => '',
     );
 
     private static $secret_key = array(
-        'test' => 'sk_test_E3HvmFw7oI4RKFJRJKbHUXYp',
-        'live' => 'sk_live_kko3NSIj6Ukq2BN9mr78docz',
+        'test' => '',
+        'live' => '',
     );
 
     private static $public_key = array(
-        'test' => 'pk_test_abE4wWit7vTWFkkFohwdGldW',
-        'live' => 'pk_live_1zGuYOA45O8enC1efRvlogJy',
+        'test' => '',
+        'live' => '',
     );
 
     /** Return secret key */
@@ -247,7 +247,7 @@ class Project_Deliver_Stripe
         \Stripe\Stripe::setApiKey(self::getSecretKey());
 
         $plan = \Stripe\Plan::retrieve(
-            $stripe_plan_id, ['stripe_account' => 'acct_1GT5svBgD1gSGU6w']
+            $stripe_plan_id, ['stripe_account' => 'acct_']
         );
 
         return $plan;
